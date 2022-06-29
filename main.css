@@ -1,0 +1,283 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+
+    height: 100vh;
+    width: 100% auto;
+    background: url('img/img3.jpg') no-repeat center center/cover;
+    align-items: center;
+}
+
+/* MAIN SECTION CSS */
+
+.details {
+    display: flex;
+
+    width: 40%;
+    flex-direction: column;
+    position: absolute;
+    right: 5rem;
+}
+
+
+.details h1 {
+    font-size: 4em;
+}
+
+.details p {
+
+    margin-top: 1.5em;
+    font-size: 1.5em;
+}
+
+/* POPUP SHOW BUTTON */
+
+#click {
+    margin-top: 2em;
+    font-size: 20px;
+    height: 50px;
+    width: 30%;
+    border: none;
+    font-family: 'Titan One', cursive;
+    color: #F53803;
+    border-radius: 10px;
+}
+
+#click:hover {
+    cursor: pointer;
+    color: #FFF;
+    background-color: black;
+}
+
+/* SPINNING WHEEL CARD CSS */
+
+#card {
+    display: flex;
+
+    position: absolute;
+    right: 2rem;
+    justify-content: center;
+    height: 80vh;
+    width: 140vh;
+    background: linear-gradient(#F53803, #F5D020);
+    border-radius: 30%;
+
+
+}
+
+/* SPINNING WHEEL */
+
+.elements {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(51, 49, 49);
+    border-radius: 50%;
+    border: 15px solid rgb(74, 74, 75);
+    position: absolute;
+    left: -10%;
+    bottom: 10%;
+    overflow: hidden;
+    transition: all ease-out 5s;
+}
+
+.elements div {
+    height: 50%;
+    width: 200px;
+    position: absolute;
+    clip-path: polygon(100% 0, 50% 100%, 0 0);
+    transform: translateX(-50%);
+    transform-origin: bottom;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #fff;
+    left: 135px;
+}
+
+.elements .one {
+    background-color: #880808;
+    left: 50%;
+
+}
+
+
+.elements .two {
+    background-color: #D7AF00;
+    transform: rotate(45deg);
+}
+
+
+.elements .three {
+    background-color: #880808;
+    transform: rotate(90deg);
+}
+
+.elements .four {
+    background-color: #D7AF00;
+    transform: rotate(135deg);
+}
+
+.elements .five {
+    background-color: #880808;
+    transform: rotate(180deg);
+}
+
+.elements .six {
+    background-color: #D7AF00;
+    transform: rotate(225deg);
+}
+
+.elements .seven {
+    background-color: #880808;
+    transform: rotate(270deg);
+}
+
+.elements .eight {
+    background-color: #D7AF00;
+    transform: rotate(315deg);
+}
+
+/* SPIN BUTTON */
+
+#start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: 12px;
+    position: absolute;
+    cursor: pointer;
+    left: 10%;
+    bottom: 46%;
+    height: 70px;
+    width: 70px;
+    background-color: #FFF;
+    border-radius:100%;
+    transform: rotate(-45deg);
+}
+
+#start h2 {
+    transform: rotate(45deg);
+}
+
+/* Spin wheel content */
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    right: 10rem;
+    top: 10rem;
+}
+
+.about h1 {
+    font-size: 3rem;
+    color: white;
+
+}
+
+.about h3 {
+    margin-top: 1.5em;
+    font-size: 1.2rem;
+}
+
+.gifts {
+    font-size: 10rem;
+    color: black;
+}
+
+#arrow{
+display:flex;
+position: absolute;
+left: 29%;
+bottom: 45%;
+    font-size: 5rem;
+    color: rgb(74, 74, 75);
+}
+
+
+
+
+/* POPUP CLOSE BUTTON */
+#cut {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    top: 3rem;
+    background-color: #F53803;
+    border: 2px solid black;
+    color: white;
+  
+    border-radius: 100%;
+    right: 3rem;
+    height: 50px;
+    width: 50px;
+}
+
+#cut:hover {
+
+    cursor: pointer;
+    font-size: 30px;
+    animation: round 2s ease-in-out infinite;
+}
+
+@keyframes round {
+    0% {
+        background-color: #82f15a;
+        transform: rotate(90deg);
+    }
+
+    25% {
+        background-color: #F5D020;
+        transform: rotate(180deg);
+    }
+
+    50% {
+        background-color: aqua;
+        transform: rotate(270deg);
+    }
+
+    100% {
+        background-color: bisque;
+        transform: rotate(360deg);
+    }
+
+}
+
+#msg1{
+    display: none;
+}
+#msg2{
+    display: none;
+}
+#msg3{
+    display: none;
+}
+#msg4{
+    display: none;
+}
+#msg5{
+    display: none;
+}
+#msg6{
+    display: none;
+}
+#msg7{
+    display: none;
+}
+#msg8{
+    display: none;
+}
