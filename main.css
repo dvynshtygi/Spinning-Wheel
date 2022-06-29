@@ -57,7 +57,7 @@ body {
 /* SPINNING WHEEL CARD CSS */
 
 #card {
-    display: flex;
+    display: non;
 
     position: absolute;
     right: 2rem;
